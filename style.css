@@ -1,0 +1,113 @@
+:root {
+
+/* Text  */
+
+--darkblue: hsl(238, 29%, 16%);
+--red: hsl(14, 88%, 65%);
+
+/* background gradient  */
+
+--violet: hsl(273, 75%, 66%);
+--softblue: hsl(240, 6%, 50%); 
+
+/* ### Neutral */
+
+--darkgrayishblue: hsl(237, 12%, 33%);
+--grayishblue: hsl(240, 6%, 50%);
+
+
+/* dividers */
+
+--bluedividers: hsl(240, 5%, 91%); 
+
+}
+
+/* 1. STYLING BODY  */
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background:            linear-gradient(var(--violet), #6463E7);
+    background-attachment: fixed;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--darkblue);
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--darkgrayishblue);
+}
+
+p {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--darkgrayishblue);
+}
+
+
+/* 1. STYLING MAIN CARD LAYOUT */
+
+.parent-container {
+    background-color: white;
+    height: 800px;
+    width: 327px;
+    border-radius: 23px;
+    margin: auto;
+    margin-top: 148px;
+}
+
+
+.image-section {
+    background-image: url(images/illustration-woman-online-mobile.svg), url(/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    height: 180px;
+    background-position: 50% 20%, 40% 100%;
+
+}
+
+.title-faq {
+    text-align: center;
+}
+
+.accordion {
+    width: 279px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+}
+
+.answer {
+    width: 279px;
+    margin: auto;
+
+}
+
+.icon-faq {
+    display: grid;
+    justify-self: end;
+    align-self: center;
+}
+
+hr {
+    width: 279px; 
+    border: 1px solid var(--bluedividers);
+    margin: auto;
+}
+
+
+
+/* FAQ FUNCTIONALITY  */
+
+.answer {
+    display: none;
+}
+
+:hover.accordion {
+    cursor: pointer;
+}
+
